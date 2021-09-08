@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           <i className="bi bi-github d-inline-block" style={{ fontSize: "1.5rem"}}></i>
           <span className="ms-3 d-inline-block">GitHub Alt.</span>
         </Link>
@@ -16,10 +16,10 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link" to="#">Home</NavLink>
+              <NavLink className="nav-link" to="/" exact>Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="#">Link</NavLink>
+              <NavLink className="nav-link" to="/perfil">Perfil</NavLink>
             </li>
             <li className="nav-item dropdown">
               <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,7 +33,7 @@ function Navbar() {
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link disabled" to="#" tabIndex="-1" aria-disabled="true">Disabled</NavLink>
+              <NavLink className="nav-link" to="/pesquisa">Pesquisa</NavLink>
             </li>
           </ul>
           <form className="d-flex">
